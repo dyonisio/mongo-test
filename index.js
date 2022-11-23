@@ -111,7 +111,7 @@ app.get('/', (req, res) => {
 
 mongoose
   .connect(
-    'mongodb+srv://user:password@restfulapibanco.lq7ds.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+    'mongodb+srv://jardini:jardini123@cluster0.l8jzncy.mongodb.net/?retryWrites=true&w=majority',
   )
   .then(() => {
     console.log('Conectou ao banco!')
