@@ -4,7 +4,7 @@ const Person = mongoose.model('Person', {
   name: String,
   salary: Number,
   approved: Boolean,
-  hostname: String
+  ip: String
 })
 
 module.exports = Person
