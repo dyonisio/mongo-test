@@ -18,11 +18,13 @@ app.use(express.json())
 // rotas
 app.post('/person', async (req, res) => {
   const { name, salary, approved } = req.body
+  const hostname = req.hostname 
 
   const person = {
     name,
     salary,
     approved,
+    hostname
   }
 
   try {
