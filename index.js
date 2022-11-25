@@ -18,7 +18,8 @@ app.use(express.json())
 // rotas
 app.post('/person', async (req, res) => {
   const { name, salary, approved } = req.body
-  const ip = req.ip 
+  //const ip = req.ip 
+  var ip = req.headers['x-forwarded-for'] ||  req.socket.remoteAddress || null
 
   const person = {
     name,
